@@ -5,7 +5,7 @@
 package jp.ac.tsuda.kyoryuIce;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+//import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -29,7 +29,7 @@ import javax.servlet.http.HttpSession;
  */
 //@WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
 public class LoginServlet extends HttpServlet {
-
+    private static final long serialVersionUID = 1L;
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and

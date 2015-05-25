@@ -5,7 +5,7 @@
 package jp.ac.tsuda.kyoryuIce;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+//import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -22,14 +22,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+//import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author 
  */
 public class CartServlet extends HttpServlet {
-
+    private static final long serialVersionUID = 1L;
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
@@ -44,7 +44,7 @@ public class CartServlet extends HttpServlet {
             throws ServletException, IOException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
         //   PrintWriter out = response.getWriter();
-        HttpSession session = request.getSession();
+        //HttpSession session = request.getSession();
         String[] strVals = request.getParameterValues("shohinid");
         int numChecks = 0;
         if (strVals != null) {
